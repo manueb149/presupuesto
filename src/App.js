@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { Fragment, useState } from 'react';
+import Pregunta from './components/Pregunta';
 
 function App() {
+
+
   return (
-    <h1>Presupuesto</h1>
+    <Fragment>
+      <div className="container">
+      <header>
+        <h1>Gasto Semanal</h1>
+
+        <div className="contenido-principal conetido">
+          <Pregunta />
+        </div>
+      </header>
+    </div>
+    </Fragment>
   );
 }
 
