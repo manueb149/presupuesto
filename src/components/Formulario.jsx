@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import Error from "./Error";
 import shortId from "shortid";
 
@@ -71,5 +71,10 @@ const Formulario = ({ saveSetGasto, setCrearGasto }) => {
     </form>
   );
 };
+
+Formulario.propTypes = {
+  saveSetGasto: PropTypes.object.isRequired,
+  setCrearGasto: PropTypes.bool.isRequired
+}
 
 export default Formulario;

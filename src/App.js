@@ -67,7 +67,6 @@ function App() {
                       <ControlPresupuesto
                         presupuesto={presupuesto}
                         restante={restante}
-                        gastos={gastos}
                       />
                     </div>
                   </div>
